@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start":"app.js",
-    "dev":"nodemon app.js"
+    "dev":"nodemon app.js",
+    "build:server": "babel server -d dist/server",
+  "build:frontend": "babel public/js -d public/js-compiled",
+  "build": "npm run build:server && npm run build:frontend"
+
   },
   "keywords": [],
   "author": "",
