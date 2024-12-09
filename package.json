@@ -2,11 +2,11 @@
   "name": "nodejs-blog",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/server/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "app.js",
-    "dev": "nodemon app.js",
+    "start": "node dist/server/app.js",
+    "dev": "nodemon dist/server/app.js",
     "build:server": "babel server -d dist/server",
     "build:frontend": "babel public/js -d public/js-compiled",
     "build": "npm run build:server && npm run build:frontend"
