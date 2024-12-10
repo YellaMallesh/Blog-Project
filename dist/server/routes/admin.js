@@ -7,9 +7,7 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
 var express = require('express');
 var router = express.Router();
 var Post = require('../models/Post');
-
-
-var User = require('/models/User');
+var User = require('../models/User');
 var bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
 var adminLayout = '../views/layouts/admin';
